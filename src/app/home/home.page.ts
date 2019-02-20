@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController, MenuController} from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+
+  constructor(public navCtl: NavController, private menu: MenuController) { }
+
+  openSideMenu() {
+    this.menu.enable(true, 'first');
+    this.menu.open('first');
+  }
+  closeSideMenu(){
+    this.menu.close('first');
+  }
 }
