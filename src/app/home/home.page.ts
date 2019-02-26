@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, MenuController} from '@ionic/angular';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -16,7 +17,22 @@ export class HomePage {
     this.menu.enable(true, 'first');
     this.menu.open('first');
   }
-  closeSideMenu(){
+  closeSideMenu() {
     this.menu.close('first');
+  }
+  goYouTube() {
+    this.navCtl.navigateForward('/youtube');
+  }
+  goHome() {
+    this.navCtl.navigateForward('/home');
+  }
+  goMusic() {
+    this.navCtl.navigateForward('/music');
+  }
+  goCalculator() {
+    this.navCtl.navigateForward('/calculator');
+  }
+  goStopWatch() {
+    this.navCtl.navigateForward('/stopwatch');
   }
 }
