@@ -1,0 +1,25 @@
+.displayNumber{
+  ion-input{
+    text-align: end;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    font-size: x-large;
+  }
+
+}
+.calculatorBody{
+  ion-button{
+    width: 60px;
+    font-size: medium;
+    margin: auto;
+    text-align: center;
+
+  }
+  ion-card-header{
+    border: 1px solid;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
